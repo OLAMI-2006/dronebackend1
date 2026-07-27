@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/deleveries")
-@CrossOrigin(origins = {"http://localhost:5174", "https://your-frontend-app.vercel.app"})
+@CrossOrigin(origins = {"http://localhost:5174", "http://localhost:5173", "https://frontenddrone.vercel.app"})
 public class DeliveryController {
 private  final DeliveryRequestRepository deliveryRequestRepository;
 
