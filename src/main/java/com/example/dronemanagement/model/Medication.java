@@ -27,4 +27,9 @@ public class Medication {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "drone_id")
     private Drone drone;
+
+    public void setType(String blood) {
+    }
+
+
 }

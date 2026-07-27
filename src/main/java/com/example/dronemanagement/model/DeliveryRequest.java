@@ -29,8 +29,11 @@ public class DeliveryRequest {
     @Column(name = "created_at")
     private LocalDateTime createdAt = LocalDateTime.now();
 
-    // One delivery request is assigned to exactly one drone for the flight
+
     @ManyToOne
     @JoinColumn(name = "assigned_drone_id")
     private Drone assignedDrone;
+
+    public void setDestination(String destination) {
+    }
 }
